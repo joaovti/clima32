@@ -290,7 +290,7 @@ bool enviarAvisos(String textoMensagem = "", bool enviarAlexa = true, bool envia
     HTTPClient httpNtfy;
     String ntfyUrl = "http://ntfy.sh/" + ntfyTopic;
     httpNtfy.begin(ntfyUrl);
-    httpNtfy.addHeader("Title", "Estacao Clima - " + localizacaoNome);
+    httpNtfy.addHeader("Title", "Clima32 - " + localizacaoNome);
     httpNtfy.addHeader("Priority", "urgent"); // Nivel 5: acorda celular e soa alarme
     httpNtfy.addHeader("Tags", "thermometer,cloud");
 
@@ -533,7 +533,7 @@ void handleRoot() {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Estacao Meteorologica</title>
+  <title>Clima32</title>
   <style>
     :root {
       --bg: #f8fafc;
@@ -659,7 +659,7 @@ void handleRoot() {
     <!-- Cabecalho -->
     <header>
       <div class="header-left">
-        <div class="header-title">Estacao Meteorologica</div>
+        <div class="header-title">Clima32</div>
       </div>
       <div class="header-right">
         <div class="live-dot-wrap">
