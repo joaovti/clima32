@@ -354,7 +354,7 @@ def gerar_relatorios_e_recap(pasta_dados, url_esp32_base):
         "recap_umid_max": u_max_var,
         "total_dias": len(diario),
         "datas_disponiveis": datas_todas,
-        "servidor_api": f"http://{obter_ip_local()}:8088",
+        "servidor_api": f"http://{obter_ip_local()}:8089",
         "dias": dias_detalhado
     }
 

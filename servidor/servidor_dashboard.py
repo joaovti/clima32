@@ -19,7 +19,7 @@ from http.server import HTTPServer, BaseHTTPRequestHandler
 import urllib.request
 import urllib.error
 
-PORTA = 8088
+PORTA = 8089
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 CONFIG_FILE = os.path.join(SCRIPT_DIR, "config.json")
 

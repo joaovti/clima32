@@ -148,7 +148,7 @@ Se você também quiser rodar o servidor de visualização no próprio PC:
 ```bash
 python3 servidor_dashboard.py
 ```
-Acesse no navegador: `http://localhost:8088`.
+Acesse no navegador: `http://localhost:8089`.
 
 ---
 
