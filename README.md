@@ -1,4 +1,4 @@
-# 🌦️ Clima32 — Estação Meteorológica Inteligente com ESP32 & Python
+# Clima32 — Estação Meteorológica Inteligente com ESP32 & Python
 
 > **Clima32** é uma estação meteorológica completa, moderna e autônoma desenvolvida com microcontrolador **ESP32** e backend em **Python**. 
 
@@ -6,24 +6,24 @@ O sistema coleta dados de temperatura e umidade em tempo real, consulta a previs
 
 ---
 
-## ✨ Recursos Principais
+## Recursos Principais
 
-- 📱 **Painel Web Moderno em Abas (Nativo no ESP32)**:
+- **Painel Web Moderno em Abas (Nativo no ESP32)**:
   - **Aba 1 (Painel Principal)**: Temperatura e umidade internas (DHT11/DHT22), temperatura externa, sensação térmica, banner inteligente comparativo de conforto térmico, médias consolidadas (hoje, semana e mês) e recap do dia de maior oscilação térmica.
   - **Aba 2 (Histórico 24h & Calendário)**: Seletor de data por calendário no padrão brasileiro (`DD/MM/AAAA`), cards de estatísticas diárias, matriz hora a hora (00:00 às 23:00) e **gráfico interativo SVG de curva dupla** comparando a temperatura interna (azul) e externa (laranja).
   - **Aba 3 (Alexa & Notificações)**: Envio manual de frases personalizadas e resumos climáticos para caixas Echo Dot via Voice Monkey e testes de alerta push.
   - **Aba 4 (Configurações & Diagnóstico)**: Seção de **telemetria em tempo real do ESP32** (temperatura interna do chip/CPU, memória RAM livre, sinal Wi-Fi e tempo de operação), além de ajuste de CEP, agendamento de avisos e personalização das frases da Alexa.
-- ⚡ **Arquitetura Leve & Histórico Sob Demanda**:
+- **Arquitetura Leve & Histórico Sob Demanda**:
   - O ESP32 mantém em memória RAM os 7 dias mais recentes para navegação instantânea.
   - Ao selecionar dias mais antigos (semanas ou meses atrás), o ESP32 busca sob demanda apenas o JSON leve (~1 KB) daquele dia no servidor, **sem nunca estourar a memória RAM do ESP32**.
-- 🔊 **Avisos Contextuais Diários na Alexa**:
+- **Avisos Contextuais Diários na Alexa**:
   - O ESP32 analisa automaticamente o clima no horário agendado e avisa na Alexa: *"Bom dia! Vai chover, não esqueça o guarda-chuva."*, *"Tempo seco, hidrate-se bem."*, etc.
-- 📊 **Coleta Contínua em Servidor Local**:
+- **Coleta Contínua em Servidor Local**:
   - Script Python que roda em segundo plano (no PC, Raspberry Pi ou servidor local), salvando leituras brutas em CSV e calculando relatórios consolidados diários, semanais e mensais.
 
 ---
 
-## 🗂️ Estrutura do Projeto
+## Estrutura do Projeto
 
 ```text
 clima32/
@@ -42,7 +42,7 @@ clima32/
 
 ---
 
-## 🛠️ Requisitos de Hardware
+## Requisitos de Hardware
 
 1. **Placa ESP32** (ex: ESP32 DevKit v1, NodeMCU-32S).
 2. **Sensor de Temperatura e Umidade**: DHT11 ou DHT22.
@@ -50,7 +50,7 @@ clima32/
 4. **Resistor de 10kΩ** (necessário apenas se o sensor DHT não for um módulo com resistor embutido).
 5. **Jumpers** de conexão.
 
-### 🔌 Esquema de Ligação
+### Esquema de Ligação
 
 | Sensor DHT11 / DHT22 | Pino no ESP32 |
 | :--- | :--- |
@@ -60,7 +60,7 @@ clima32/
 
 ---
 
-## 💻 Instalação & Gravação no ESP32
+## Instalação e Gravação no ESP32
 
 ### 1. Preparar o Arduino IDE
 1. Baixe e instale o [Arduino IDE](https://www.arduino.cc/en/software) (versão 2.x recomendada).
@@ -97,7 +97,7 @@ No Arduino IDE, abra o **Gerenciador de Bibliotecas** (Ctrl + Shift + I) e insta
 
 ---
 
-## 🖥️ Instalação & Uso da Parte Python (Servidor / PC)
+## Instalação e Uso da Parte Python (Servidor / PC)
 
 O backend Python é responsável por coletar as leituras periodicamente, salvar arquivos CSV no disco e manter as médias históricas atualizadas.
 
@@ -152,7 +152,7 @@ Acesse no navegador: `http://localhost:8088`.
 
 ---
 
-## ⚙️ Execução em Segundo Plano (Modo Contínuo)
+## Execução em Segundo Plano (Modo Contínuo)
 
 Para manter o coletor rodando sem precisar deixar uma janela de terminal aberta:
 
@@ -191,7 +191,7 @@ sudo systemctl enable --now clima32
 
 ---
 
-## 🔔 Integração com Notificações Push e Alexa
+## Integração com Notificações Push e Alexa
 
 ### 1. Notificações no Celular (NTFY — Grátis e Sem Cadastro)
 1. Instale o aplicativo **ntfy** no seu smartphone (Android / iOS).
@@ -209,6 +209,6 @@ sudo systemctl enable --now clima32
 
 ---
 
-## 📄 Licença
+## Licença
 
 Este projeto está sob a licença [MIT](LICENSE) — sinta-se livre para usar, estudar, modificar e distribuir.
