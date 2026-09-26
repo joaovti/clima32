@@ -28,8 +28,7 @@ O sistema coleta dados de temperatura e umidade em tempo real, consulta a previs
 ```text
 clima32/
 ├── esp32/
-│   └── EstacaoESP32/
-│       └── EstacaoESP32.ino        # Código-fonte C/C++ para o ESP32
+│   └── esp32.ino                   # Código-fonte C/C++ para o ESP32
 ├── servidor/
 │   ├── coletor.py                  # Coletor de dados periódico e sincronizador
 │   ├── servidor_dashboard.py       # Servidor web local com histórico completo
@@ -79,7 +78,7 @@ No Arduino IDE, abra o **Gerenciador de Bibliotecas** (Ctrl + Shift + I) e insta
 - **ArduinoJson** (versão 7.x, por Benoit Blanchon)
 
 ### 3. Configurar e Gravar
-1. Abra o arquivo [`esp32/EstacaoESP32/EstacaoESP32.ino`](esp32/EstacaoESP32/EstacaoESP32.ino).
+1. Abra o arquivo [`esp32/esp32.ino`](esp32/esp32.ino).
 2. No início do arquivo, ajuste o nome e a senha da sua rede Wi-Fi:
    ```cpp
    const char* ssid = "SUA_REDE_WIFI";
