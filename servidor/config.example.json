@@ -1,0 +1,5 @@
+{
+  "esp32_url": "http://192.168.0.XXX/api/dados",
+  "intervalo_segundos": 300,
+  "pasta_dados": "./dados"
+}

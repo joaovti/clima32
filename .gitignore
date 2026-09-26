@@ -1,0 +1,30 @@
+# Dados e banco local
+dados/
+*.csv
+resumo_recente.json
+config.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# Arduino e Compilação
+build/
+*.bin
+*.elf
+*.hex
+.arduino/
+libraries/
+
+# IDE e Sistema Operacional
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
