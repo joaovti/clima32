@@ -103,6 +103,7 @@ O backend Python é responsável por coletar as leituras periodicamente, salvar 
 ### 1. Requisitos
 - **Python 3.8** ou superior.
 - Computador, Raspberry Pi ou servidor conectado na mesma rede local do ESP32.
+- **Sistema Operacional**: Compatível com Linux, Windows e macOS (testado e validado em ambiente **Debian Linux**).
 
 ### 2. Instalação das Dependências
 No terminal, entre na pasta `servidor` e instale os pacotes:
